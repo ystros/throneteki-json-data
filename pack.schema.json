@@ -28,6 +28,12 @@
                     "type": "null"
                 }
             ]
+        },
+        "cardpool": {
+            "enum": [
+                "original",
+                "redesign"
+            ]
         }
     },
     "required": [

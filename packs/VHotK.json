@@ -3,6 +3,7 @@
     "code": "VHotK",
     "name": "Hand of the King Variant",
     "releaseDate": null,
+    "cardpool": "original",
     "cards": [
         {
             "code": "00030",

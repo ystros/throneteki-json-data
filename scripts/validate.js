@@ -37,6 +37,15 @@ if(!restrictedListResult.valid) {
     valid = false;
 }
 
+let cardpoolsValidator = new BasicValidator(require('../cardpools.schema.json'));
+let cardpools = require('../cardpools.json');
+let cardpoolsResult = cardpoolsValidator.validate(cardpools);
+
+if(!cardpoolsResult.valid) {
+    console.error(`Errors in cardpools.json:\n${cardpoolsResult.errors.join('\n')}`);
+    valid = false;
+}
+
 let standaloneDecksValidator = new BasicValidator(require('../standalone-decks.schema.json'));
 let standaloneDecks = require('../standalone-decks.json');
 let standaloneDecksResult = standaloneDecksValidator.validate(standaloneDecks);

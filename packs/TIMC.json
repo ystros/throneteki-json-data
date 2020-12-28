@@ -3,6 +3,7 @@
     "code": "TIMC",
     "name": "There Is My Claim",
     "releaseDate": "2016-12-01",
+    "cardpool": "original",
     "cards": [
         {
             "code": "04061",
